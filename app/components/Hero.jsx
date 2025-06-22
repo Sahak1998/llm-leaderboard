@@ -10,8 +10,9 @@ const Hero = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 1 }}
-      className="text-white min-h-screen flex items-center relative"
+      className="text-white min-h-screen flex items-center relative overflow-hidden"
     >
+      <div className="absolute top-[60%] left-1/2 -translate-x-1/2 w-[100%] h-[30vh] bg-[radial-gradient(ellipse_at_center,_rgba(127,29,29,0.3)_0%,_rgba(0,0,0,0)_70%)] z-0" />
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 text-center md:text-left">
